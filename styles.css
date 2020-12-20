@@ -74,6 +74,10 @@ nav {
   display: none;
 }
 
+.notResponsive {
+  display: none;
+}
+
 /********************************************* hero section***************************************************** */
 
 .hero {
@@ -490,7 +494,7 @@ h3 {
 
 @keyframes bubble-anim3 {
   from {
-    transform: translate(0, 300%);
+    transform: translate(0, 150%);
     opacity: 1;
   }
   to {
@@ -601,7 +605,7 @@ textarea,
   flex-direction: column;
   left: 5%;
   line-height: 2.5rem;
-  bottom: 5%;
+  bottom: 15%;
 }
 .copyright h5 {
   font-size: 0.9rem;
@@ -617,7 +621,21 @@ textarea,
 
 /* **********************************************Mobo responsive*********************************************** */
 @media screen and (max-width: 768px) {
-  body {
+  #fullpage {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .notResponsive {
+    text-align: center;
+    margin: 50px 50px;
+  }
+  .notResponsive h1 {
+    font-size: 1.5rem;
+  }
+
+  /* body {
     overflow-x: hidden;
   }
   .nav {
@@ -660,9 +678,9 @@ textarea,
   }
   .nav-active {
     transform: translateX(0%);
-  }
+  } */
   /* *******hero section***** */
-  .pic img {
+  /* .pic img {
     width: 300px;
     height: 400px;
   }
@@ -675,23 +693,23 @@ textarea,
   }
   .hero button {
     left: 35%;
-  }
+  } */
   /* *******about section**** */
-  .lap img {
+  /* .lap img {
     width: 400px;
     height: 400px;
   }
   .text {
     right: 5%;
     top: 30%;
-  }
+  } */
   /* ******skills****** */
-  .skillText {
+  /* .skillText {
     top: 35%;
     font-size: 8rem;
-  }
+  } */
   /* **********contact******* */
-  .contact form {
+  /* .contact form {
     width: 30%;
     right: 10%;
   }
@@ -728,10 +746,10 @@ textarea,
   .social {
     bottom: 30%;
     right: 14%;
-  }
+  } */
 }
 
-@keyframes linkAnime {
+/* @keyframes linkAnime {
   from {
     opacity: 0;
     transform: translateX(50px);
@@ -752,4 +770,4 @@ textarea,
 
 .toggle .line3 {
   transform: rotate(45deg) translate(-3px, -4px);
-}
+} */
