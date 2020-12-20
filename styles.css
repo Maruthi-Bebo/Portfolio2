@@ -628,6 +628,7 @@ textarea,
     display: none;
   }
   .notResponsive {
+    display:block;
     text-align: center;
     margin: 50px 50px;
   }
