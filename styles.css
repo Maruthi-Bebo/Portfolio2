@@ -494,7 +494,7 @@ h3 {
     opacity: 1;
   }
   to {
-    transform: translate(0, -800%);
+    transform: translate(0, -1000%);
     opacity: 1;
   }
 }
