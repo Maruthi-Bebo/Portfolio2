@@ -309,7 +309,7 @@ h3 {
   left: 2%;
   background: radial-gradient(circle at 10px 100px, rgb(230, 91, 11), #000);
 
-  animation: bubble-anim3 10s ease-out infinite;
+  animation: bubble-anim3 15s ease-out infinite;
 }
 .circle1:hover {
   animation-play-state: paused;
@@ -326,7 +326,7 @@ h3 {
     #055194 80%,
     #062745 100%
   );
-  animation: bubble-anim3 10s ease-out infinite 1.5s;
+  animation: bubble-anim3 15s ease-out infinite 1.5s;
 }
 .circle2:hover {
   animation-play-state: paused;
@@ -337,7 +337,7 @@ h3 {
   bottom: 0%;
   left: 40%;
   background: radial-gradient(circle at 20px 100px, rgb(253, 249, 21), #000);
-  animation: bubble-anim3 10s ease-out infinite 0.8s;
+  animation: bubble-anim3 15s ease-out infinite 0.8s;
 }
 .circle3:hover {
   animation-play-state: paused;
@@ -348,7 +348,7 @@ h3 {
   bottom: 0%;
   left: 60%;
   background: radial-gradient(circle at 20px 100px, rgb(64, 2, 116), #000);
-  animation: bubble-anim3 10s ease-out infinite 2s;
+  animation: bubble-anim3 15s ease-out infinite 2s;
 }
 .circle4:hover {
   animation-play-state: paused;
@@ -359,7 +359,7 @@ h3 {
   bottom: 0%;
   left: 85%;
   background: radial-gradient(circle at 20px 100px, rgb(43, 44, 44), #000);
-  animation: bubble-anim3 10s ease-out infinite 2.5s;
+  animation: bubble-anim3 15s ease-out infinite 2.5s;
 }
 .circle5:hover {
   animation-play-state: paused;
@@ -370,7 +370,7 @@ h3 {
   bottom: -10%;
   left: 2%;
   background: radial-gradient(circle at 20px 100px, rgb(99, 134, 3), #000);
-  animation: bubble-anim3 10s ease-out infinite 3s;
+  animation: bubble-anim3 15s ease-out infinite 3s;
 }
 .circle6:hover {
   animation-play-state: paused;
@@ -385,7 +385,7 @@ h3 {
     rgba(22, 3, 58, 0.644),
     #000
   );
-  animation: bubble-anim3 10s ease-out infinite 4.5s;
+  animation: bubble-anim3 15s ease-out infinite 4.5s;
 }
 .circle7:hover {
   animation-play-state: paused;
@@ -415,7 +415,7 @@ h3 {
     rgba(5, 116, 150, 0.644),
     #000
   );
-  animation: bubble-anim3 10s ease-out infinite 5.5s;
+  animation: bubble-anim3 15s ease-out infinite 5.5s;
 }
 .circle9:hover {
   animation-play-state: paused;
@@ -431,7 +431,7 @@ h3 {
     rgba(212, 209, 3, 0.644) 80%,
     #000
   );
-  animation: bubble-anim3 10s ease-out infinite 5.5s;
+  animation: bubble-anim3 15s ease-out infinite 5.5s;
 }
 .circle10:hover {
   animation-play-state: paused;
@@ -447,7 +447,7 @@ h3 {
     rgba(16, 102, 38, 0.644) 40%,
     #000
   );
-  animation: bubble-anim3 10s ease-out infinite 7s;
+  animation: bubble-anim3 15s ease-out infinite 7s;
 }
 .circle11:hover {
   animation-play-state: paused;
@@ -494,7 +494,7 @@ h3 {
     opacity: 1;
   }
   to {
-    transform: translate(0, -1000%);
+    transform: translate(0, -800%);
     opacity: 1;
   }
 }
