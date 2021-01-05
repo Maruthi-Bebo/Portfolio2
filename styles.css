@@ -621,6 +621,9 @@ textarea,
 
 /* **********************************************Mobo responsive*********************************************** */
 @media screen and (max-width: 768px) {
+  #fp-nav.fp-right{
+    display: none;
+  }
   #fullpage {
     display: none;
   }
@@ -628,9 +631,11 @@ textarea,
     display: none;
   }
   .notResponsive {
+    min-height: 100vh;
     display:block;
     text-align: center;
-    margin: 50px 50px;
+    margin: 100px 50px;
+    
   }
   .notResponsive h1 {
     font-size: 1.5rem;

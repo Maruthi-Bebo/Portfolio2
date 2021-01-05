@@ -62,6 +62,12 @@ burger.addEventListener("click", () => {
 
 navSlide();
 
+// **************************** auto year **********************
+year = new Date().getFullYear();
+document.querySelector(".autoYear").textContent= year
+    
+
+
 
 // ***************svg text********************
 
