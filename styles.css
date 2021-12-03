@@ -618,27 +618,38 @@ textarea,
 .footer a:hover {
   color: white;
 }
-
+.smallerScreens{
+  display: none;
+}
+html,body{
+  overflow-x: hidden;
+}
 /* **********************************************Mobo responsive*********************************************** */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   #fp-nav.fp-right{
     display: none;
   }
-  #fullpage {
+  #fullpage, .desktopDisplay {
     display: none;
   }
   nav {
     display: none;
   }
-  .notResponsive {
+  .smallerScreens {
     min-height: 100vh;
-    display:block;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 100px 50px;
-    
+    margin:0 10%;
   }
-  .notResponsive h1 {
+  .smallerScreens h1 {
     font-size: 1.5rem;
+  }
+  .smallerScreens p{
+    margin: 10px 0 0 0;
+    text-align: right;
+    font-size: 16px;
   }
 
   /* body {
