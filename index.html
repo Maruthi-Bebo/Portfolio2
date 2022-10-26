@@ -45,7 +45,7 @@
         <li><a href="#about1">About</a></li>
         <li><div class="dropdown show">
           <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Collabs
+            Hands In
           </a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
             <a class="dropdown-item" href="https://unsaid.com/" target="_blank">Unsaid</a>
@@ -371,24 +371,31 @@
         </div>
       </section>
     </div>
-
+    <!-- https://script.google.com/macros/s/AKfycbzYSU1wbpF3HDopn_GQrLQxWndxfO1RS9n_flz-dKFiO0M7UhgbFtEtd31NYpjhDDZfQw/exec -->
     <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbyxrcEOYLZ2bOA1qAc8JYTTACATg_K8kn1gqDMkIb2tHqesTrrg/exec";
+      // const scriptURL ="https://script.google.com/macros/s/AKfycbyxrcEOYLZ2bOA1qAc8JYTTACATg_K8kn1gqDMkIb2tHqesTrrg/exec";
+      // const scriptURL ="https://script.google.com/macros/s/AKfycbzYSU1wbpF3HDopn_GQrLQxWndxfO1RS9n_flz-dKFiO0M7UhgbFtEtd31NYpjhDDZfQw/exec";
+      const scriptURL ="https://script.google.com/macros/s/AKfycbzghz0kG_Rtkr5-vM8b8zEeyT3oLRYAEPcDB2UY-KcO9B6VzQwYrN8quw0ZLiHYxCMSyA/exec";
       const form = document.forms["contact-form"];
-
       form.addEventListener("submit", (e) => {
         e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then(
-            (response) =>
-              alert(
-                "Form Submitted Successfully.. Thanks for your Time!!",
-                response
-              ),
-            document.querySelector("#contactForm").reset()
-          )
-          .catch((error) => alert("Success!", error.message));
+        fetch(scriptURL,{ 
+          mode: 'no-cors',
+          method: "POST", 
+          // headers:{
+          //   // 'Content-Type': 'application/json',
+          //   // 'Accept': 'application/json',
+          //   // 'Access-Control-Allow-Origin': 'http://127.0.0.1:5500'
+          //   // 'Access-Control-Allow-Origin':  'http://127.0.0.1:5500',
+          //   // 'Access-Control-Allow-Methods': 'POST',
+          //   // 'Access-Control-Allow-Headers': 'Content-Type, application/x-www-form-urlencoded'
+          // },
+          body: new FormData(form) 
+        })
+        .then((response) => alert("Form Submitted Successfully.. Thanks for your Time!!",response),
+          document.querySelector("#contactForm").reset()
+        )
+        .catch((error) => alert("Success!", error.message));
       });
     </script>
     <script
