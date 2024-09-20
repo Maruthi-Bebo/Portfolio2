@@ -45,10 +45,11 @@ nav {
 }
 
 .nav-links {
+  margin: 0;
   display: flex;
   list-style: none;
   width: 50%;
-  height: 20%;
+  /* height: 20%; */
   justify-content: space-around;
 }
 .nav-links a {
